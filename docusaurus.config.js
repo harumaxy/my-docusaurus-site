@@ -73,15 +73,15 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/harumaxy/my-docusaurus-site/tree/master',
+          // // Please change this to your repo.
+          // editUrl:
+          //   'https://github.com/harumaxy/my-docusaurus-site/tree/master',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/harumaxy/my-docusaurus-site/tree/master',
+          // editUrl:
+          //   'https://github.com/harumaxy/my-docusaurus-site/tree/master',
           feedOptions: {
             type: 'all',
             copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc.`,
@@ -90,8 +90,13 @@ module.exports = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        // Will be passed to @docusaurus/plugin-google-analytics.
+        googleAnalytics: {
+          trackingID: 'G-6130F20960',
+          // Optional fields.
+          anonymizeIP: true, // Should IPs be anonymized?
+        },
       },
     ],
-  ],
-  themes: []
+  ]
 };

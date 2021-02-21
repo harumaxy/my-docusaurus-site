@@ -92,7 +92,7 @@ module.exports = {
         },
         // Will be passed to @docusaurus/plugin-google-analytics.
         googleAnalytics: {
-          trackingID: 'G-6130F20960',
+          trackingID: 'UA-151651447-2',
           // Optional fields.
           anonymizeIP: true, // Should IPs be anonymized?
         },
